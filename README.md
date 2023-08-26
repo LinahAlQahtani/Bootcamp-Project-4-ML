@@ -56,7 +56,7 @@
 | GradientBoostingRegressor| 0.84    | 
 
 
-| ML Model    | Mean Squared Error | Root Mean Squared Error | Mean Absolute Error |R-squared  |
+| ML Model    | Mean Squared Error | Root Mean Squared Error | Mean Absolute Error | R-squared  |
 |-------------------|-------------------------|-------------------|-------------------|
 | LinearRegression  | 1716336945.26|41428.69  | 23612.43| 0.67|
 | GradientBoostingRegressor | 858626468.98 | 29302.32  | 16925.27 | 0.83|
