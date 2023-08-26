@@ -1,27 +1,60 @@
-# Machine Learning
-### Based on what you’ve learned until now, use NumPy, pandas, matplotlib, seaborn, and scikit-learn to create a project of your choosing. 
+# السيارات المستخدمة في السعودية 🚗 🇸🇦
 
-### This project must at least satisfy the following minimum requirements:
+## المقدمة والأهداف 💬
 
-- Choose a public dataset that needs to clean and preprocess.
-- EDA
-    - Apply the essential EDA steps: head, shape, info, describe, and missing values.
-    - Display different charts that give an overview of your data.
-- Use two splitting methods (train-test split and cross-validation split).
-- Choose three proper ML Algorithms.
-- Report appropriate evaluation metrics for each model.
-- Create a chart that compares the final results of your selected models.
-- Write a final conclusion and recommendations (your interpretation of the results).
-- Report your final conclusion and findings in one page (readme markdown file).
-    - Team members and their duties.
-    - Introduction (problem or your goal).
-    - Dataset Overview and Source.
-    - A table represents the final results of ML models.
-- [Nice to have - Optional] Create an interactive dashboard using Plotly.
-- Due Date: Sun, 26 Aug, at 11:00 p.m.
-- The Final presentation will be on Sunday (10 min for each group).
+تم العمل على في هذا المشروع على مجموعة بيانات للسيارات المستعملة في السعودية.
+يهدف هذا المشروع إلى استخدام خوارزميات التعلم الآلي
+(machine learning algorithms) 
+لغرض التنبؤ. 
+استخدمنا خوارزميات الانحدار(regression algorithms).
+للتنبؤ بسعر السيارات المستخدمة في السعودية. 
 
-### Final Deliverables:
-- Notebook file(.ipynb).
-- Dataset file.
-- README.md file.
+
+
+## نظرة عامة عن البيانات و مصدرها 📍
+
+ [Kaggle](https://www.kaggle.com/datasets/turkibintalib/saudi-arabia-used-cars-dataset) 
+تحتوي مجموعة البيانات على 8248 سجلاً للسيارات المستعملة تم جمعها من موقع syarah.com. 
+يمثل كل صف سيارة مستعملة مع المعلومات الأخرى المتعلقة بكل سيارة هي اسم العلامة التجارية، الموديل، سنة الصنع، الأصل، لون السيارة، الخيارات، سعة المحرك، نوع الوقود، نوع ناقل الحركة، المسافة المقطوعة التي قطعتها السيارة، سعر المنطقة، وقابل للتفاوض
+
+
+## أعضاء الفريق 👥
+1. عبدالرحمن البقمي: EDA , Visualization , ML
+2. محمد الحربي: ML , Dashboard
+3. لينه القحطاني: ML , Markdown
+
+
+
+
+## تجهيز البيانات وتنظيفها 🧹
+  ثم تجهيز البيانات و تنظيفها:,Pandas تم رفع و استعراض مجموعة البيانات باستخدام مكتبة
+
+- Shape: استخدام df.shape لفهم عدد الصفوف والأعمدة.
+- Info: معلومات عن الأعمدة و نوع البيانات وعدد القيم غير الفارغة باستخدام df.info().
+- Describe: إحصائيات موجزة للأعمدة الرقمية في مجموعة البيانات. باستخدام df.describe()
+- تم حذف الاعمدة غير المهمه بفكرة المشروع.
+- Missing Values: قمنا بفحص وجود قيم مفقودة في مجموعة البيانات باستخدام الدالة isnull() وجمع القيم الخالية.
+- fillna: تم التعامل مع القيم الخاليه باستخدام fillna()
+
+
+---
+
+## الخوارزميات المختارة 📋
+1. LinearRegression
+2. ExtraTreesRegressor
+3. GradientBoostingRegressor
+
+
+## نتائج نماذج ML 📋
+
+يلخص الجدول أدناه النتائج النهائية لنماذج التعلم الآلي التي تم تقييمها في هذا المشروع:
+
+| ML Model                 | R-squared| 
+|-----------------------|----------|
+| LinearRegression  | 0.67   |
+| ExtraTreesRegressor | 0.83   | 
+| GradientBoostingRegressor| 0.84    | 
+
+
+## لوحة المعلومات 📋
+ 
